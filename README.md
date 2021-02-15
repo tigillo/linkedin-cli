@@ -42,6 +42,11 @@ Run below command and provide your client id and secret of your linkedin applica
 linkedin configure set application
 ```
 
+#### Linkedin Application Configuration
+Go to `auth` page of your linkedin application and add `http://localhost:4625` address as the `Authorized redirect URLs for your app` on the *OAuth 2.0 settings* section.
+
+![Linkedin Application Configuration](https://linkedin-cli.tigillo.com/img/linkedin-app-config.jpg)
+
 ### Login
 Run below command and authenticate your linkedin application for your user on the opened web dialog. Once approved your api token will be stored to `~/.linkedin/config.json` file.
 
