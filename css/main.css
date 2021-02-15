@@ -111,7 +111,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
    Section Title
    ========================================================================== */
 .section {
-  padding: 80px 0 65px;
+  padding: 110px 0 65px;
 }
 
 .section-header {
@@ -681,13 +681,18 @@ button:focus {
 .hero-area-2 {
   color: #fff;
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  z-index: 33;
+  width: 100%;
+  height: 90px;
+  top: 0px;
+  left: 0px;
 }
 
 .hero-area-2 .overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90px;
   top: 0px;
   left: 0px;
   background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
@@ -2022,9 +2027,6 @@ textarea {
   padding-right: 0;
 }
 
-header {
-  height: 100%;
-}
 #container {
   height: 100%;
 }

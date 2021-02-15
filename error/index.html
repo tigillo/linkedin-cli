@@ -7,7 +7,7 @@
     <meta name="keywords" content="DevOps, SaaS, Software, Development, Test Automation">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Login Successful! - LinkedIn Cli - Tigillo</title>
+    <title>Authorization Failed! - LinkedIn Cli - Tigillo</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -51,8 +51,9 @@
         <div class="row space-100">
           <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="contents">
-              <h2 class="head-title">Login Successful!</h2>
-              <p>You can close this window now.</p>
+              <h2 class="head-title">Authorization Failed!</h2>
+              <p><strong>Error:</strong> <span id="error"></span></p>
+              <p><strong>Description:</strong> <span id="description"></span></p>
             </div>
             <div>
               <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
@@ -71,6 +72,13 @@
       gtag('js', new Date());
 
       gtag('config', 'G-B50RNHYJZB');
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const error = urlParams.get('error');
+      const description = urlParams.get('description');
+      document.getElementById("error").innerText = error;
+      document.getElementById("description").innerText = description;
     </script>
   </body>
 </html>

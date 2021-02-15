@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="DevOps, SaaS, Software, Development, Test Automation">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>Login Successful! - LinkedIn Cli - Tigillo</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">    
+
+  </head>
+  
+  <body>
+
+    <!-- Header Section Start -->
+    <header class="hero-area-2">    
+      <div class="overlay"></div>
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <a href="https://tigillo.com/" class="navbar-brand"><img src="img/linkedin-cli.png" height="60" alt=""></a>  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="https://tigillo.com/#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="https://tigillo.com/#services">Services</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="https://tigillo.com/#clients">Clients</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="https://tigillo.com/#map-area">Contact</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav> 
+    </header> 
+    <section class="section">
+      <div class="container">
+        <div class="row space-100 linkedin">
+          <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="contents">
+
+              <h3 id="linkedin-cli">linkedin-cli</h3>
+              <p>Linkedin command line interface (cli) is a python 3 console application to handle authentication and communication with LinkedIn API v2.</p>
+
+              <p>Linkedin-cli requires a linkedin application client id and client secret to authenticate a user on the linkedin api v2. <a href="https://www.linkedin.com/developers/apps/new">Create a linkedin application</a> on linkedin developer site if you don’t have already.</p>
+
+              <p>Follow <a href="https://www.linkedin.com/company/tigillo">tigillo</a> on linkedin for the latest updates.</p>
+
+              <h3 id="requirements">Requirements</h3>
+              <p>python 3</p>
+
+              <h3 id="installation">Installation</h3>
+              <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> pip <span class="nb">install </span>linkedin-cli
+              </code></pre></div></div>
+
+              <h3 id="running">Running</h3>
+              <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> linkedin
+              </code></pre></div></div>
+
+              <h3 id="usage">Usage</h3>
+              <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usage: linkedin &lt;<span class="nb">command</span><span class="o">&gt;</span> <span class="o">[</span>&lt;args?]
+
+              These are common linkedin commands used <span class="k">in </span>various situations:
+
+                  config       Get and <span class="nb">set </span>linkedin-cli options
+                  login        Login with a user <span class="k">for </span>api access
+                  me           Display logged <span class="k">in </span>user details
+                  post         Share a post
+
+              Other commands
+
+                  <span class="nb">help         </span>Print <span class="nb">help</span> <span class="o">(</span>this message<span class="o">)</span>
+                  version      Print the version information
+              </code></pre></div></div>
+
+              <h3 id="configure-linkedin-application">Configure Linkedin Application</h3>
+              <p>Run below command and provide your client id and secret of your linkedin application. Configuration will be saved to <code class="language-plaintext highlighter-rouge">~/.linkedin/config.json</code> file.</p>
+
+              <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linkedin configure <span class="nb">set </span>application
+              </code></pre></div></div>
+
+              <h3 id="login">Login</h3>
+              <p>Run below command and authenticate your linkedin application for your user on the opened web dialog. Once approved your api token will be stored to <code class="language-plaintext highlighter-rouge">~/.linkedin/config.json</code> file.</p>
+
+              <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linkedin login
+              </code></pre></div></div>
+
+              <h3 id="share-a-post">Share a Post</h3>
+              <p>Put content between double quotes, new lines supported. Only text content supported currently.</p>
+
+              <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linkedin post <span class="s2">"Hello connections!
+
+              Sent from my terminal via linkedin-cli"</span>
+              </code></pre></div></div>
+
+              <h4 id="post-visibility">Post Visibility</h4>
+              <p>Default visibility option for post command is <code class="language-plaintext highlighter-rouge">connections</code>. Visibility option can be set as <code class="language-plaintext highlighter-rouge">connections</code> or <code class="language-plaintext highlighter-rouge">public</code>.</p>
+
+              <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linkedin post <span class="nt">-v</span> public <span class="s2">"Hello world!
+
+              Sent from my terminal via linkedin-cli"</span>
+              </code></pre></div></div>
+
+              <h3 id="build">Build</h3>
+              <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 setup.py build
+              </code></pre></div></div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B50RNHYJZB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B50RNHYJZB');
+    </script>
+  </body>
+</html>
