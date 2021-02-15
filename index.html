@@ -90,6 +90,10 @@
 
               <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>linkedin configure <span class="nb">set </span>application
               </code></pre></div></div>
+              
+              <h4 id="linkedin-app-config">Linkedin Application Configuration</h3>
+              <p>Go to `auth` page of your linkedin application and add `http://localhost:4625` address as the `Authorized redirect URLs for your app` on the *OAuth 2.0 settings* section.</p>
+              <p><img src="img/linkedin-app-config.jpg" alt="Linkedin Application Configuration"/></p>
 
               <h3 id="login">Login</h3>
               <p>Run below command and authenticate your linkedin application for your user on the opened web dialog. Once approved your api token will be stored to <code class="language-plaintext highlighter-rouge">~/.linkedin/config.json</code> file.</p>
