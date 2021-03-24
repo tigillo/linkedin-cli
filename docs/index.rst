@@ -28,22 +28,22 @@ Follow [tigillo](https://www.linkedin.com/company/tigillo) on linkedin or visit 
 
 
 Requirements
---------
+============
 python 3
 
 Installation
---------
+============
 .. code-block:: bash
     python3 -m pip install linkedin-cli
 
 Running
---------
+=======
 .. code-block:: bash
     python3 -m linkedin
 
 
 Usage
---------
+=====
 .. code-block:: bash
     usage: linkedin <command> [<args?]
 
@@ -60,18 +60,18 @@ Usage
         version      Print the version information
 
 Configure Linkedin Application
---------
+==============================
 Run below command and provide your client id and secret of your linkedin application. Configuration will be saved to `~/.linkedin/config.json` file.
 
 .. code-block:: bash
     linkedin configure set application
 
 Linkedin Application Configuration
---------
+==================================
 Go to `auth` page of your linkedin application and add `http://localhost:4625` address as the `Authorized redirect URLs for your app` on the *OAuth 2.0 settings* section.
 
 Login
---------
+=====
 Run below command and authenticate your linkedin application for your user on the opened web dialog. Once approved your api token will be stored to `~/.linkedin/config.json` file.
 
 .. code-block:: bash
@@ -79,7 +79,7 @@ Run below command and authenticate your linkedin application for your user on th
 
 
 Share a Post
---------
+============
 Put content between double quotes, new lines supported. Only text content supported currently.
 
 .. code-block:: bash
@@ -89,7 +89,7 @@ Put content between double quotes, new lines supported. Only text content suppor
 
 
 Post Visibility
---------
+===============
 Default visibility option for post command is `connections`. Visibility option can be set as `connections` or `public`.
 
 .. code-block:: bash
@@ -99,6 +99,6 @@ Default visibility option for post command is `connections`. Visibility option c
 
 
 Build
---------
+=====
 .. code-block:: bash
     python3 setup.py build
