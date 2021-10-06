@@ -20,7 +20,7 @@ class LoginRequestHandler(http.server.BaseHTTPRequestHandler):
             description = parsed_query[1][1]
             logger.error(description)
             self.send_response(307)
-            self.send_header('Location','https://tigillo.com/error?error=' + query_value + '&description='+description)   
+            self.send_header('Location','https://linkedin-cli.tigillo.com/error?error=' + query_value + '&description='+description)   
         elif query_key == "code":
             logger.debug("Authorization allowed")
             logger.debug("Authorization code:" + query_value)
