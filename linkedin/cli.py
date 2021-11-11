@@ -17,11 +17,9 @@ class CLI:
             {"name": "config.set.application", "pattern": r'^config set application$', "module":"linkedin.commands.config", "klass": "SetApplicationConfigCommand"},
             {"name": "me", "pattern": r'^me$', "module":"linkedin.commands.me", "klass": "MeCommand"},
             {"name": "post.help", "pattern": r'^post help$', "module":"linkedin.commands.post", "klass": "HelpCommand"},
-            {"name": "post.public", "pattern": r'^post -v=public', "module":"linkedin.commands.post", "klass": "PostPublicCommand"},
-            {"name": "post.public", "pattern": r'^post --visibility=public', "module":"linkedin.commands.post", "klass": "PostPublicCommand"},
-            {"name": "post.connections", "pattern": r'^post -v=connections', "module":"linkedin.commands.post", "klass": "PostConnectionsCommand"},
-            {"name": "post.connections", "pattern": r'^post --visibility=connections', "module":"linkedin.commands.post", "klass": "PostConnectionsCommand"},
-            {"name": "post", "pattern": r'^post', "module":"linkedin.commands.post", "klass": "PostConnectionsCommand"},
+            {"name": "post.public", "pattern": r'^post\s*(-v|--visibility)(\s*|=)public', "module":"linkedin.commands.post", "klass": "PostPublicCommand"},
+            {"name": "post.connections", "pattern": r'^post\s*(-v|--visibility)(\s*|=)connections', "module":"linkedin.commands.post", "klass": "PostConnectionsCommand"},
+            {"name": "post", "pattern": r'^post', "module":"linkedin.commands.post", "klass": "PostPublicCommand"},
         ]
 
     def execute(self, args):

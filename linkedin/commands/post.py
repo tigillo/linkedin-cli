@@ -18,11 +18,11 @@ class HelpCommand(command.BaseCommand):
 
 class PostConnectionsCommand(command.BaseCommand):
     def execute(self, args):
-        content = args[1]
+        content = args[-1]
         linkedin.Linkedin().post(linkedin.MemberNetworkVisibility.CONNECTIONS, content)
 
 class PostPublicCommand(command.BaseCommand):
     def execute(self, args):
-        content = args[2]
+        content = args[-1]
         linkedin.Linkedin().post(linkedin.MemberNetworkVisibility.PUBLIC, content)
 
