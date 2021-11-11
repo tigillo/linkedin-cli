@@ -5,6 +5,9 @@ Linkedin-cli requires a linkedin application client id and client secret to auth
 
 Follow [tigillo](https://www.linkedin.com/company/tigillo) on linkedin for the latest updates.
 
+### Supporters
+[Tigillo - Software Development Company](https://tigillo.com)
+
 ### Requirements
 python 3
 
